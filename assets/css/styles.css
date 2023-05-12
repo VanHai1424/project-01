@@ -51,7 +51,19 @@ body {
 
 
 /* ========= Header =========== */
-.header {
+.fix-header {
+    background-color: #E6F0FF;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
     background-color: #e6f0ff;
     height: 100vh;
     position: relative;
@@ -61,7 +73,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -144,7 +156,7 @@ body {
 
 .clients {
     margin-top: 79px;
-    padding: 43px 0 64px;
+    padding: 43px 0s;
 }
 
 .clients .row {
