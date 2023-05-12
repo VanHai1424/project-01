@@ -10,6 +10,15 @@ html {
     font-size: 62.5%;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", "sans-serif";
+}
+
 a {
     text-decoration: none;
 }
@@ -44,11 +53,6 @@ a {
     opacity: 0.9;
 }
 
-body {
-    font-size: 1.6rem;
-    font-family: "Poppins", "sans-serif";
-}
-
 
 /* ========= Header =========== */
 .fix-header {
@@ -64,10 +68,10 @@ body {
 .hero-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #e6f0ff;
     height: calc(100vh - 90px);
     position: relative;
-    
 }
 
 .navbar {
@@ -109,15 +113,11 @@ body {
 }
 
 
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -125,7 +125,7 @@ body {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.4rem;
@@ -133,7 +133,7 @@ body {
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.78;
